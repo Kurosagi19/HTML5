@@ -32,25 +32,26 @@ html {
 }
 
 .container {
-    font-size: 20px;
+    width: 800px;
+    margin: 20px auto;
 }
 
 
 /* ID */
 
 #box1 {
-    width: 5em;
-    height: 5em;
+    width: 30%;
+    height: 50px;
     background-color: red;
     float: left;
 }
 
 #box2 {
-    width: 5rem;
-    height: 5rem;
+    width: 70%;
+    height: 50px;
     background-color: green;
     margin-top: 10px;
-    float: right;
+    float: left;
 }
 
 .clear {
