@@ -1,0 +1,52 @@
+* {
+    /* margin: 0;
+    padding: 0; */
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+table,
+tr,
+td,
+th {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+html {
+    font-size: 16px;
+}
+
+.container {
+    font-size: 20px;
+}
+
+
+/* ID */
+
+#box1 {
+    width: 5em;
+    height: 5em;
+    background-color: red;
+}
+
+#box2 {
+    width: 5rem;
+    height: 5rem;
+    background-color: green;
+    margin-top: 10px;
+}

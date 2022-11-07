@@ -1,0 +1,12 @@
+ul,
+ol,
+li {
+    font-family: sans-serif;
+    font-size: 130%;
+    list-style-type: circle;
+}
+
+h1,
+h2 {
+    font-family: sans-serif;
+}
