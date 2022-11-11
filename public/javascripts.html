@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+
+<body>
+    <p onclick="clickMe()">Javascripts</p>
+    <div id="box"></div>
+
+
+    <script>
+        function clickMe() {
+            alert("Clicked me!!!"); //hàm hiển thị thông báo
+            confirm("Bạn có chắc chắn không ?");
+            var value = prompt("Nhập một số: ");
+            console.log(value);
+        }
+        var el = document.getElementById("box");
+        el.innerHTML = "box content";
+        el.style.backgroundColor = "green";
+        console.log(el);
+    </script>
+</body>
+
+</html>
