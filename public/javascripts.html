@@ -11,26 +11,87 @@
             width: 100px;
             height: 100px;
             border: 1px solid #000;
+            background-color: aqua;
         }
     </style>
 </head>
 
 <body>
-    <p onclick="clickMe()">Javascripts</p>
+    <!-- <p onclick="clickMe()">Javascripts</p>
     <div id="box"></div>
+    <a href="">Link 1</a>
+    <a href="">Link 2</a>
+    <a href="">Link 3</a>
+
+    <img src="" alt="" id="image"> -->
+
+    <form method="post" action="index.html" name="formName" onsubmit="return validateForm();">
+        <input type="text" name="name" value="" placeholder="Name">
+        <input type="submit" value="Submit">
+    </form>
+
 
 
     <script>
-        function clickMe() {
-            alert("Clicked me!!!"); //hàm hiển thị thông báo
-            confirm("Bạn có chắc chắn không ?");
-            var value = prompt("Nhập một số: ");
-            console.log(value);
+        function validateForm() {
+            var a = 10;
+            var b = "20";
+            var c = a + parseInt(b);
+            var d = parseFloat(a) / parseFloat(b);
+            var text = "10+20";
+            console.log(c);
+            console.log(d);
+            console.log(eval(text));
+
+            var form = document.forms("formName");
+            var name = form['name'];
+            var nameVal = name.value;
+
+            if (nameVal == "") {
+                alert("Tên không được bỏ trống !")
+                return false;
+            }
+            return true;
         }
-        var el = document.getElementById("box");
-        el.innerHTML = "box content";
-        el.style.backgroundColor = "green";
-        console.log(el);
+        // function clickMe() {
+        //     alert("Clicked me!!!"); //hàm hiển thị thông báo
+        //     confirm("Bạn có chắc chắn không ?");
+        //     var value = prompt("Nhập một số: ");
+        //     console.log(value);
+        // }
+        // var el = document.getElementById("box");
+        // el.innerHTML = "box content";
+        // el.style.backgroundColor = "green";
+        // console.log(el);
+
+
+
+        // function sapXepTangDan() {
+        //     for (int i = 0; i < n - 1; i++) {
+        //         for (int j = i + 1; j < n; j++) {
+        //             if (a[i] > a[j]) { //a[i] = 2, a[j] = 1
+        //                 int temp;
+        //                 temp = a[i]; //temp = a[i] = 2
+        //                 a[i] = a[j]; //a[i] = 1
+        //                 a[j] = temp; //a[j] = 2
+        //             }
+        //         }
+        //     }
+        // }
+
+        // var el = document.getElementById("box");
+        // el.innerHTML = "text box";
+        // el.style.color = "red";
+        // el.style.backgroundColor = "green";
+        // console.log(el);
+
+
+        // var elA = document.getElementsByTagName("a");
+        // console.log(elA);
+        // elA[0].href = "https://www.google.com";
+
+        // var img = document.getElementById("image");
+        // img.src = "http://m.gettywallpapers.com/wp-content/uploads/2020/11/Cat-Wallpaper-576x1024.jpg";
     </script>
 </body>
 
