@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/Bill.css">
+    <title>Bill</title>
+</head>
+
+<body>
+
+    <body>
+        <div id="container">
+
+            <div class="form-control">
+                <label for="">How much was your bill ?</label>
+                <br>
+                <input type="text" name="bill_cost" value="" placeholder="">
+            </div>
+
+            <div class="form-control">
+                <label for="">How many people are sharing the bill ?</label>
+                <br>
+                <input type="text" name="people" value="" placeholder="">
+            </div>
+
+            <div class="operator">
+                <div class="item" id="CALCULATE" onclick="calculate(this)">+</div>
+            </div>
+
+            <div class="form-control">
+                <label for="">Total Cost</label>
+                <br>
+                <input type="text" name="" id="result" value="">
+            </div>
+
+            <div class="form-control">
+                <label for="">Discount (%)</label>
+                <br>
+                <select name="discount" id="discount" placeholder="---Select---">
+                    <option value="10%">10%</option>
+                    <option value="20%">20%</option>
+                    <option value="30%">30%</option>
+                    <option value="40%">40%</option>
+                    <option value="50%">50%</option>
+            </div>
+    
+        </div>
+        <script>
+            function calculate(x) {
+                var bill_cost = document.getElementById("bill_cost").value;
+                var people = document.getElementById("people").value;
+                var check = true;
+                var result;
+                if (number_1 == "") {
+                    alert("You haven't entered your bill cost !");
+                    check = false;
+                }
+                if (number_2 == "") {
+                    alert("You need to enter a number except 0 !");
+                    check = false;
+                }
+                if (check == true) {
+                    switch (x.innerHTML) {
+                        
+                    }
+                    document.getElementById("result").value = result;
+                }
+            }
+        </script>
+</body>
+</html>
