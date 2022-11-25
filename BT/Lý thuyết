@@ -1,1 +1,1 @@
-display :+none: không hiển thị thành phần này lên màn hình.+inline: hiển thị thành phần này dưới dạng một thẻ inline.+inline-block: hiển thị thành phần này dưới dạng một thẻ mang thuộc tính của thẻ inline và cả thẻ block.+block: hiển thị thành phần này dưới dạng
+/* display :+none: không hiển thị thành phần này lên màn hình.+inline: hiển thị thành phần này dưới dạng một thẻ inline.+inline-block: hiển thị thành phần này dưới dạng một thẻ mang thuộc tính của thẻ inline và cả thẻ block.+block: hiển thị thành phần này dưới dạng */
