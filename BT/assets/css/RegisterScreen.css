@@ -9,8 +9,9 @@
     text-align: left;
 }
 
-#Register {
+#btnRegister {
     padding: 5px 12px;
+    background-color: lightblue;
 }
 
 .errorInputMessage {
