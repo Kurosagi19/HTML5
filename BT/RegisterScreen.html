@@ -10,49 +10,53 @@
 </head>
 
 <body>
-    <div id="container">
-        <div class="form-control">
-            <label for="">Username:</label>
-            <br>
-            <input type="text" name="username" value="" placeholder="">
-        </div>
-
-        <div class="form-control">
-            <label for="">Password:</label>
-            <br>
-            <input type="text" name="password" value="" placeholder="">
-        </div>
-
-        <div class="form-control">
-            <label for="">Re-password:</label>
-            <br>
-            <input type="text" name="re_password" value="" placeholder="">
-        </div>
-        <div class="operators">
-            <div class="item" id="register" onclick="register(x)"><strong>Register</strong></div>
-        </div>
+    <div class="container">
+        <!-- <span class="errorInputMessage" id="registerError">Tên đăng nhập hoặc mật khẩu không chính xác</span> -->
+        <form action="home.html" name="registerForm" method="get" onsubmit="return validateForm();">
+            <table>
+                <tr>
+                    <td style="width: 100px;"><b>Username: </b></td>
+                    <td>
+                        <input type="text" name="username" id="username" value="" placeholder="">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="tdError">
+                        <span class="errorInputMessage" id="usernameError">Tên đăng nhập không được để trống.</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Password:</b> </td>
+                    <td>
+                        <input type="text" name="password" id="password" value="" placeholder="">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="tdError">
+                        <span class="errorInputMessage" id="passwordError">Mật khẩu không được để trống.</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Re-Password:</b> </td>
+                    <td>
+                        <input type="text" name="re_password" id="re_password" value="" placeholder="">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="tdError">
+                        <span class="errorInputMessage" id="re_passwordError">Phải nhập lại mật khẩu.</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Register" id="btnRegister">
+                    </td>
+                </tr>
+            </table>
+        </form>
     </div>
 
-    <script>
-        function register(x) {
-            var username = document.getElementById("username").value;
-            var password = document.getElementById("password").value;
-            var re_password = document.getElementById("re_password").value;
-            var check = true;
-            if (password == "") {
-                alert("Không được để trống !");
-                check = false;
-            }
-            if (password == "") {
-                alert("Không được để trống !");
-                check = false;
-            }
-            if (re_password == "") {
-                alert("Không được để trống !");
-                check = false;
-            }
-        }
-    </script>
+    <script src="assets/js/RegisterScreen.js"></script>
 </body>
 
 </html>
